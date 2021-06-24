@@ -4,4 +4,9 @@ var variablesUsed={
   score:0
   }
   
-  export default variablesUsed
+function pr()
+{
+  console.log(variablesUsed)
+}
+
+pr()
