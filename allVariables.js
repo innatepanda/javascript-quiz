@@ -5,8 +5,12 @@
 function login()
 {
   var emailtext=document.getElementById('email')
-  var passtext=document.getElementById('pass')
-  if(emailtext.value=="" || passtext.value=="")
+  // var passtext=document.getElementById('pass')
+  // if(emailtext.value=="" || passtext.value=="")
+  // {
+  //   alert("please input all fields")
+  // }
+  if(emailtext.value=="")
   {
     alert("please input all fields")
   }
