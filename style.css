@@ -13,3 +13,31 @@
     padding-bottom: 40px;
     font-weight: lighter;
 }
+.quiz{
+    padding: 20px;
+    text-align: center;
+   
+}
+#ques-text{
+    font-size: 20px;
+}
+.form-check-input{
+    margin-left: 20px;
+    
+}
+.r_btn{
+    margin: 10px 0 10px 0;
+}
+.next{
+    border: none;
+    border-radius: 25px;
+    padding: 7px 20px 7px 20px;
+    background-color: rgb(187, 187, 187);
+    transition: all .3s ease;
+
+}
+.next:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
