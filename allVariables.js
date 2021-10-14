@@ -1,7 +1,3 @@
-
- 
-  
-  
 function login()
 {
   var emailtext=document.getElementById('email')
@@ -10,13 +6,23 @@ function login()
   // {
   //   alert("please input all fields")
   // }
-  if(emailtext.value=="")
-  {
-    alert("please input all fields")
+
+
+/** Email Form Input Validation **/
+  function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
   }
-  
-  localStorage.setItem("name",emailtext.value.split('@')[0].toString() );
-  window.location.href="Homepage.html";
+    if (emailtext.value=="") {
+      alert("please input all fields");
+      return;
+  } if (validateEmail(emailtext.value) === true) {
+      localStorage.setItem("name",emailtext.value.split('@')[0].toString() );
+      window.location.href="Homepage.html";
+  } else {
+     alert("please enter a valid email");
+     return;
+  }
 
 }
 
@@ -145,8 +151,6 @@ function changeQuestion(){
   }
 }
 
-
-
 function getscore()
 {
   var usertext=document.getElementById('user')  
@@ -156,9 +160,6 @@ function getscore()
   scoretext.innerText=localStorage.getItem("score")
   
 }
-
-
-
 
 function returnToHome(){
   window.location.href="homepage.html"
